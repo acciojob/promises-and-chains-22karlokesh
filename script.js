@@ -7,9 +7,10 @@ document.getElementById("voteForm").addEventListener("submit", function (event) 
   const age = document.getElementById("age").value.trim();
 
   if (name === "" || age === "") {
-    alert("Please enter valid details.");
-    return;
+  alert("Please enter valid details"); // Removed the period here
+  return;
   }
+
 
   const ageNum = Number(age);
 
